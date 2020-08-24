@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo a Surfbot</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -57,28 +61,118 @@
         </div>
         <div>
             <h2>Aulas em uma das melhores praia da Arrábida.</h2>
-            <div>
-                <img src="" alt="">
-                <h3>8km de praia</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Restaurante a beira mar</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Salva vidas a cada 300m</h3>
-            </div>
-            <div>
-                <p>Portinho da Arrábida é uma pequeno lugar pertencente à freguesia de São Lourenço, no concelho e distrito de Setúbal, em Portugal. É mais conhecida pela praia adjacente à localidade. Localiza-se na Serra da Arrábida em pleno Parque Natural da Arrábida, que a rodeia a Norte.</p>
-                <p>Portinho da Arrábida é uma pequeno lugar pertencente à freguesia de São Lourenço, no concelho e distrito de Setúbal, em Portugal. É mais conhecida pela praia adjacente à localidade. Localiza-se na Serra da Arrábida em pleno Parque Natural da Arrábida, que a rodeia a Norte.</p>
-            </div>
+            <ul>
+                <li class="chinelo"><span>8km de costa</span> </li>
+                <li class="coco">Restaurantes à beira mar</li>
+                <li class="boia">Salva-vidas a cada 300m</li>
+            </ul>
+            <p>Portinho da Arrábida é uma pequeno lugar pertencente à freguesia de São Lourenço, no concelho e distrito
+                de Setúbal, em Portugal. É mais conhecida pela praia adjacente à localidade. Localiza-se na Serra da
+                Arrábida em pleno Parque Natural da Arrábida, que a rodeia a Norte.</p>
+            <p>Portinho da Arrábida é uma pequeno lugar pertencente à freguesia de São Lourenço, no concelho e distrito
+                de Setúbal, em Portugal. É mais conhecida pela praia adjacente à localidade. Localiza-se na Serra da
+                Arrábida em pleno Parque Natural da Arrábida, que a rodeia a Norte.</p>
         </div>
     </section>
 
     <section class="aulas">
-        
+        <h2>Aulas</h2>
+        <div class="itens">
+            <!-- Infantil -->
+            <div class="item">
+                <h3>Infantil</h3>
+                <ul>
+                    <li>Publico entre 5 e 15 anos</li>
+                    <li>Equipamentos Fornecidos</li>
+                    <li>Horários de Sex. á Sab.</li>
+                    <li>2 horas seguidas de aula</li>
+                </ul>
+                <p>R$49,00/Aula</p>
+                <a href="#">Matricula-se</a>
+            </div>
+            <!-- Adulto -->
+            <div class="item">
+                <h3>Adulto</h3>
+                <ul>
+                    <li>Publico entre 5 e 15 anos</li>
+                    <li>Equipamentos Fornecidos</li>
+                    <li>Horários de Sex. á Sab.</li>
+                    <li>3 horas seguidas de aula</li>
+                </ul>
+                <p>R$69,00/Aula</p>
+                <a href="#">Matricula-se</a>
+            </div>
+            <!-- Profissional -->
+            <div class="item">
+                <h3>Profissional</h3>
+                <ul>
+                    <li>Experiência de 3 anos no surf</li>
+                    <li>Você deve trazer o equipamento</li>
+                    <li>Horários de Sex. á Sab.</li>
+                    <li>4 horas seguidas de aula</li>
+                </ul>
+                <p>R$99,00/Aula</p>
+                <a href="#">Matricula-se</a>
+            </div>
+        </div>
+        <p>Possui um grupo com mais de 3 pessoas? <br> Entre em contato para um desconto personalizado</p>
     </section>
+
+    <div class="quote">
+        <blockquote>
+            <p>“O surf liberta as ondas de uma vida”</p>
+            <cite>Regis Pereira</cite>
+        </blockquote>
+    </div>
+
+    <section class="contact">
+        <h2>Contacto</h2>
+        <div>
+            <form action="">
+                <label for="name">Nome</label>
+                <input type="text" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email">
+
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg" cols="30" rows="6"></textarea>
+
+                <button type="submit">
+                    <p>Enviar Mensagem</p>
+                    <img src="" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>Praia mansa nº 47</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>Procure a barraca vermelha</p>
+
+                <a href="#">Ver no mapa <img src="" alt=""></a>
+            </div>
+
+            <div class="phone">
+                <h3>Email & Telefone</h3>
+                <p>contato@surfbot.com</p>
+                <p>+351 91230 4567</p>
+            </div>
+
+            <div class="hours">
+                <h3>Horário</h3>
+                <p>De Sexta á Domingo</p>
+                <p>Das 06:00 as 14:00hr</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Surfbot 2020 alguns direitos reservado</p>
+        <img src="" alt="">
+    </footer>
 </body>
 
 </html>
