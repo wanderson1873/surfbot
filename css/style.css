@@ -274,4 +274,91 @@ p {
     color: #1188EE;
 }
 
+.praia-sobre ul {
+    padding: 60px 0 30px 0;
+}
+
+.praia-sobre ul li {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 30px 0;
+    border-bottom: 2px solid #EFF4F9
+}
+
+.praia-sobre ul li:first-child {
+    border-top: 2px solid #EFF4F9;
+}
+
+.praia-sobre ul li span {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.praia-sobre li::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 65px;
+    position: relative;
+    top: 15px;
+}
+
+.chinelo::before {
+    background: url(../assets/sandalhas.svg) no-repeat;
+}
+
+.coco::before {
+    background: url(../assets/coco.svg) no-repeat;
+}
+
+
+.boia::before {
+    background: url(../assets/boia.svg) no-repeat;
+}
+
+.praia-sobre p {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+/* Aulas */
+
+.aulas {
+    background: #EFF4F9;
+    padding-bottom: 60px;
+}
+
+.aulas::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 63px;
+    background: url(../assets/onda.svg) no-repeat center ;
+    position: relative;
+    top: -25px;
+}
+
+.aulas h2 {
+    font-family: "Alice", serif;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aulas-item {
+    background: #fff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(187, 204, 221, 0.4), 0px 5px 5px rgba(187, 204, 221, 0.4);
+}
+
+.aulas-item::before {
+    content: "";
+    display: block;
+    margin: -55px auto 0 auto;
+    background: url(../assets/surfbot-icon.svg);
+    height: 47px;
+}
 
