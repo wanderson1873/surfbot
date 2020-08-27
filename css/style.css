@@ -362,3 +362,83 @@ p {
     height: 47px;
 }
 
+.infantil::before {
+    width: 31px;
+}
+
+.adulto::before {
+    width: 62px;
+}
+.profissional::before {
+    width: 93px;
+}
+
+.aulas-item h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aulas ul {
+    padding: 20px 0;
+    border-top: 2px solid #EFF4F9;
+    border-bottom: 2px solid #EFF4F9;
+    margin-bottom: 15px;
+}
+
+.aulas-item li {
+    font-size: 0.875em;
+    line-height: 2.125em;
+}
+
+.aulas-item li::before {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ff3726;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.aulas-item p {
+    font-size: 0.875em;
+    color: #1188EE;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.aulas-item a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.125em;
+    background: #445566;
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.aulas-item a::after{
+    content: "";
+    display: inline-block;
+    background: url(../assets/seta.svg) no-repeat center center;
+    width: 14.5px;
+    height: 16px;
+    float: right;
+    border-radius: 5px;
+}
+
+.aulas > p {
+    font-size: 1.125em;
+    text-align: center;
+    max-width: 419px;
+    margin: 0 auto;
+}
+
+.aulas .red {
+    
+}
