@@ -359,18 +359,18 @@ p {
     display: block;
     margin: -55px auto 0 auto;
     background: url(../assets/surfbot-icon.svg);
-    height: 47px;
+    height: 40px;
 }
 
 .infantil::before {
-    width: 31px;
+    width: 21px;
 }
 
 .adulto::before {
-    width: 62px;
+    width: 43px;
 }
 .profissional::before {
-    width: 93px;
+    width: 66px;
 }
 
 .aulas-item h3 {
@@ -440,5 +440,162 @@ p {
 }
 
 .aulas .red {
-    
+    color: #ff3726;
+    font-weight: bold;
+}
+
+.aulas .underline::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 90px;
+    position: absolute;
+    background: #ff3726;
+    margin-top: 20px;
+}
+
+/* Quote */
+.quote {
+    background: url(../assets/foto-quote.jpg);
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.quote p {
+    font-family: Alice, serif;
+    font-size: 4.5em;
+    color: #fff;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote cite {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.125em;
+    font-style: normal;
+}
+
+/* Contato */
+.contato {
+    padding: 60px 0;
+}
+
+.contato h2 {
+    font-family: Alice, serif;
+    font-size: 4.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #EFF4F9;
+}
+
+.contato label {
+    font-family: Nunito, sans-serif;
+    font-size: 1.125em;
+    color: #17222D;
+}
+
+.contato input, .contato textarea {
+    font-family: Nunito, sans-serif;
+    font-size: 1.125em;
+    color: #17222D;
+    margin-bottom: 5px;
+    background: #EFF4F9;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    max-width: 470px;
+}
+
+.contato button {
+    max-width: 250px;
+    padding: 10px 15px;
+    background: #445566;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    margin-top: 30px;
+}
+
+.contato button img {
+    float: right;
+}
+
+/* Dados */
+.dados {
+    background: url(../assets/bg-icones.svg)
+}
+
+.dados h3 {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #445566;
+}
+
+.dados ul {
+    border-bottom: 2px solid #EFF4F9;
+    padding: 15px 0;
+    max-width: 270px;
+}
+
+.dados ul:last-child {
+    border: none
+}
+
+.dados a {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #445566;
+    text-transform: uppercase;
+}
+
+.dados a::after {
+    content: "";
+    display: inline-block;
+    background: url(../assets/seta.svg);
+    width: 16px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.horario::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #11dd44;
+    border-radius: 50%;
+    margin: 0 5px 3px -11px;
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    color: #fff;
+    background: #1188ee;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+footer a img {
+    float: right;
+    color: #fff;
 }
