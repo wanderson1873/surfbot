@@ -4,29 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <title>Faça sua matricula na Surfbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Complete sua matricula na Surfbot</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <a href=""><img src="" alt=""></a>
-            <div class="nav">
-                <nav>
-                    <li><a href="#">Praia</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Praia</a></li>
-                    <li><a href="#">Matricula-se</a></li>
-                </nav>
-            </div>
+        <div class="header-menu container">
+            <a class="grid-4" href="index.html">
+                <img src="assets/surfbot-logo.svg" alt="logo surfbot">
+            </a>
+            <nav class="grid-8">
+                <li><a href="#praia">Praia</a></li>
+                <li><a href="#aulas">Aulas</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="matricula.html">Matricula-se</a></li>
+            </nav>
         </div>
     </header>
 
+    <section class="info-matricula">
+            <h1 class="container grid-12">Matricula-se</h1>
+    </section>
+
+    <section class="cadastro">
+        <div class="container">
+            <div class="matricula grid-6">
+                <form action="" class="">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" placeholder="João da silva Pereira" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="email@email.com" name="email">
+
+                        <label for="nif">NIF</label>
+                        <input type="text" placeholder="123456789" name="nif">
+
+                        <label for="endereço">Endereço</label>
+                        <input type="text" placeholder="Rua nome, bairro, cidade" name="endereço">
+
+                        <label for="cep">CEP</label>
+                        <input type="text" placeholder="0000-111" name="cep">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Forma de Pagamento</legend>
+
+                        <label for="name-card">Nome no cartão</label>
+                        <input type="text" placeholder="Nome impresso no cartão" name="name-card">
+
+                        <label for="numero-card">Número do cartão</label>
+                        <input type="text" placeholder="5555.5555.5555.5555" name="numero-card">
+
+                        <label for="codigocard">Código do cartão</label>
+                        <input type="text" placeholder="XXX" name="codigo-card">
+
+                        <label for="data-ex">Data de expiração</label>
+                        <select name="mes" id="data-ex">
+                            <option selected>Mês</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+
+                        <select name="ano">
+                            <option selected>Ano</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </fieldset>
+
+                    <p>Seu cartão será debitado em €29,90</p>
+                    <button type="submit">Realizar matricula</button>
+                    <p><img src="assets/cadeado.svg" alt="">Informações seguras e criptografadas.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
     <footer>
-        <p>Surfbot 2020 alguns direitos reservado</p>
-        <img src="" alt="">
+        <div class="container">
+            <p class="grid-11">Surfbot 2020 alguns direitos reservado</p>
+            <a href="" class="grid-1">
+                <img src="assets/surfbot-icon.svg" alt="Logo">
+            </a>
+
+        </div>
     </footer>
 </body>
 
