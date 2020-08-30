@@ -46,68 +46,94 @@
                         <label for="nif">NIF</label>
                         <input type="text" placeholder="123456789" name="nif">
 
-                        <label for="endereço">Endereço</label>
-                        <input type="text" placeholder="Rua nome, bairro, cidade" name="endereço">
+                        <div class="endereco">
+                            <div>
+                                <label for="endereco">Endereço</label>
+                                <input type="text" placeholder="Rua nome, bairro, cidade" name="endereço">
 
-                        <label for="cep">CEP</label>
-                        <input type="text" placeholder="0000-111" name="cep">
+                                <label for="cep">CEP</label>
+                                <input type="text" placeholder="0000-111" name="cep">
+
+                            </div>
+                            <div>
+                                <label for="estado">Estado</label>
+                                <select name="estado" id="estado">
+                                    <option selected>Selecione o estado</option>
+                                    <option value="SP">SP</option>
+                                    <option value="MG">MG</option>
+                                </select>
+
+                                <label for="cidade">Cidade</label>
+                                <select name="cidade" id="cidade">
+                                    <option selected>Selecione a cidade</option>
+                                    <option value="Ipatinga">Ipatinga</option>
+                                    <option value="BH">BH</option>
+                                </select>
+                            </div>
+
+                        </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Forma de Pagamento</legend>
+                        <div class="pagar">
+                            <div>
+                                <label for="name-card">Nome no cartão</label>
+                                <input type="text" placeholder="Nome impresso no cartão" name="name-card">
 
-                        <label for="name-card">Nome no cartão</label>
-                        <input type="text" placeholder="Nome impresso no cartão" name="name-card">
+                                <label for="numero-card">Número do cartão</label>
+                                <input type="text" placeholder="5555.5555.5555.5555" name="numero-card">
+                            </div>
+                            <div>
+                                <label for="data-ex">Data de expiração</label>
+                                <div class="data">
+                                    <select name="mes" id="data-ex">
+                                        <option selected>Mês</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
 
-                        <label for="numero-card">Número do cartão</label>
-                        <input type="text" placeholder="5555.5555.5555.5555" name="numero-card">
-
-                        <label for="codigocard">Código do cartão</label>
-                        <input type="text" placeholder="XXX" name="codigo-card">
-
-                        <label for="data-ex">Data de expiração</label>
-                        <select name="mes" id="data-ex">
-                            <option selected>Mês</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-
-                        <select name="ano">
-                            <option selected>Ano</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                        </select>
+                                    <select name="ano">
+                                        <option selected>Ano</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                </div>
+                                <label for="codigocard">Código do cartão</label>
+                                <input type="text" placeholder="XXX" name="codigo-card">
+                            </div>
+                        </div>
                     </fieldset>
 
                     <p>Seu cartão será debitado em €29,90</p>
                     <button type="submit">Realizar matricula</button>
-                    <p><img src="assets/cadeado.svg" alt="">Informações seguras e criptografadas.</p>
+                    <p class="cadeado">Informações seguras e criptografadas.</p>
                 </form>
             </div>
 
             <div class="plano grid-6">
                 <h2>Escolha o plano</h2>
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'Infantil')">Infantil</button>
+                    <button class="tablinks active" onclick="openCity(event, 'Infantil')">Infantil</button>
                     <button class="tablinks" onclick="openCity(event, 'Adulto')">Adulto</button>
                     <button class="tablinks" onclick="openCity(event, 'Profissional')">Profissional</button>
                 </div>
@@ -122,7 +148,7 @@
                             <li>Horários de Sex. á Sab.</li>
                             <li>2 horas seguidas de aula</li>
                         </ul>
-                        <p>R$49,00/Aula</p>
+                        <p>€29,00/Aula</p>
                     </li>
                 </div>
 
@@ -130,12 +156,12 @@
                     <li class="aulas-item adulto matricula">
                         <h3>Adulto</h3>
                         <ul>
-                            <li>Publico entre 5 e 15 anos</li>
+                            <li>Publico entre 16 e 59 anos</li>
                             <li>Equipamentos Fornecidos</li>
                             <li>Horários de Sex. á Sab.</li>
-                            <li>2 horas seguidas de aula</li>
+                            <li>3 horas seguidas de aula</li>
                         </ul>
-                        <p>R$49,00/Aula</p>
+                        <p>€49,00/Aula</p>
                     </li>
                 </div>
 
@@ -143,12 +169,12 @@
                     <li class="aulas-item infantil matricula">
                         <h3>Profissional</h3>
                         <ul>
-                            <li>Publico entre 5 e 15 anos</li>
-                            <li>Equipamentos Fornecidos</li>
+                            <li>Experiência de 3 anos no surf</li>
+                            <li>Você deve trazer o equipamento</li>
                             <li>Horários de Sex. á Sab.</li>
-                            <li>2 horas seguidas de aula</li>
+                            <li>4 horas seguidas de aula</li>
                         </ul>
-                        <p>R$49,00/Aula</p>
+                        <p>€79,00/Aula</p>
                     </li>
                 </div>
             </div>
