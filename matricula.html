@@ -26,7 +26,9 @@
     </header>
 
     <section class="info-matricula">
-            <h1 class="container grid-12">Matricula-se</h1>
+        <div class="container">
+            <h1 class="grid-12">Matricula-se</h1>
+        </div>
     </section>
 
     <section class="cadastro">
@@ -102,6 +104,55 @@
                 </form>
             </div>
 
+            <div class="plano grid-6">
+                <h2>Escolha o plano</h2>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Infantil')">Infantil</button>
+                    <button class="tablinks" onclick="openCity(event, 'Adulto')">Adulto</button>
+                    <button class="tablinks" onclick="openCity(event, 'Profissional')">Profissional</button>
+                </div>
+
+                <!-- Tab content -->
+                <div id="Infantil" class="tabcontent">
+                    <li class="aulas-item infantil matricula">
+                        <h3>Infantil</h3>
+                        <ul>
+                            <li>Publico entre 5 e 15 anos</li>
+                            <li>Equipamentos Fornecidos</li>
+                            <li>Horários de Sex. á Sab.</li>
+                            <li>2 horas seguidas de aula</li>
+                        </ul>
+                        <p>R$49,00/Aula</p>
+                    </li>
+                </div>
+
+                <div id="Adulto" class="tabcontent">
+                    <li class="aulas-item adulto matricula">
+                        <h3>Adulto</h3>
+                        <ul>
+                            <li>Publico entre 5 e 15 anos</li>
+                            <li>Equipamentos Fornecidos</li>
+                            <li>Horários de Sex. á Sab.</li>
+                            <li>2 horas seguidas de aula</li>
+                        </ul>
+                        <p>R$49,00/Aula</p>
+                    </li>
+                </div>
+
+                <div id="Profissional" class="tabcontent">
+                    <li class="aulas-item infantil matricula">
+                        <h3>Profissional</h3>
+                        <ul>
+                            <li>Publico entre 5 e 15 anos</li>
+                            <li>Equipamentos Fornecidos</li>
+                            <li>Horários de Sex. á Sab.</li>
+                            <li>2 horas seguidas de aula</li>
+                        </ul>
+                        <p>R$49,00/Aula</p>
+                    </li>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -114,6 +165,7 @@
 
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
