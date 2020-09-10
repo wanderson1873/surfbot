@@ -20,10 +20,6 @@ Esse projeto foi desenvolvido para a pratica e aprimoramento em UI Design e Codi
 
 <br>
 
-<p align="center">
-  <img src=".github/mockup.png" alt="Página inicial">
-</p>
-
 ## Tecnologias
 
 As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
