@@ -1,5 +1,3 @@
-<img align="right" style="background: #17222D; padding: 5px 15px" src="assets/surfbot-logo.svg?raw=true" style="padding: 30px 0" width="100%" alt="Surfbot">
-
 # Surfbot - aulas de surf
 
 <img align="right" src="assets/surfbot-foto.png" style="margin-bottom: 30px" width="100%" alt="Surfbot">
